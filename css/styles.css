@@ -29,14 +29,6 @@ body {
     box-sizing: inherit;
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .list {
     list-style: none;
     padding-left: 0;
@@ -64,6 +56,14 @@ ol {
 }
 
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* -----------------------------HEADER------------------------------ */
 
 .header-nav .header-link {
@@ -80,14 +80,9 @@ ol {
     display: flex;
     align-items: center;
     height: 80px;
-}
+    width: 1500px;
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -322,6 +317,7 @@ ol {
     background-color: var(--main-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 215px;
 }
 
 address {
@@ -365,6 +361,10 @@ address {
 /* --------------------------PORTFOLIO------------------------------ */
 
 
+.port-section {
+    background-color: var(--main-title-color);
+}
+
 .border {
     border: none;
 }
@@ -380,6 +380,8 @@ address {
     text-align: center;
     color: var(--second-title-color);
     background-color: var(--third-background-color);
+    padding: 6px 22px;
+    margin-right: 8px;
   
 }
 
@@ -398,11 +400,65 @@ address {
 }
 
 .port-text {
-        font-size: 16px;
-        line-height: 1.88;
-        color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-color);
 }
 
 .current {
     color: var(--accent-color);
 }
+
+.port-section-list {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.description {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.port-img-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 1200px;
+    padding-bottom: 94px; 
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.port-img-list .port-img {
+    flex-basis: calc((100% - 90px) / 3);
+    margin: 15px 15px;
+}
+
+.port-img {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.port-img:nth-child(3n) {
+    margin-right: 0;
+}
+
