@@ -111,6 +111,7 @@ ol {
 .header-link {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    font-weight: 500px;
     color: var(--second-title-color);
 }
 
@@ -195,6 +196,7 @@ ol {
     align-items: center;
     font-weight: 700;
     font-size: 16px;
+    border-radius: 4px;
     line-height: 1.8;
     display: inline-block;
     padding-top: 10px;
@@ -305,12 +307,15 @@ ol {
     margin-left: -30px;
 }
 
+.about-link > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .about-link {
     width: calc((100% - 90px) / 3);
     margin-left: 30px;
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .about-list .about-link:not(:first-child) {
@@ -426,7 +431,6 @@ address {
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--second-title-color);
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -434,7 +438,6 @@ address {
     font-size: 16px;
     line-height: 1.88;
     color: var(--text-color);
-    margin-bottom: 20px;
 }
 
 .current {
@@ -468,10 +471,6 @@ address {
     display: flex;
     flex-wrap: wrap;
     margin: -15px -15px;
-    padding: 0;
-    margin-block-start: 1em;
-    margin-inline-end: 0px;
-    box-sizing: border-box;
     background: #FFFFFF;
 }
 
