@@ -287,6 +287,12 @@ ol {
     text-align: center;
 }
 
+.section-team-item > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .team-list {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -321,7 +327,6 @@ ol {
 .social-icon {
     width: 20px;
     height: 20px;
-    color: #AFB1B8;
     fill: currentColor;
 }
 
@@ -355,8 +360,6 @@ ol {
     line-height: calc(19 / 16);
     text-align: center;
     color: var(--second-title-color);
-
-    margin-top: 30px;
 }
 
 .section-team-text {
@@ -586,6 +589,12 @@ address {
 
 .project-link {
     display: block;
+}
+
+.project-link > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .port-img {
