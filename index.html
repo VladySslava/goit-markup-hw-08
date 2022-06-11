@@ -64,7 +64,9 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn border">Заказать услугу</button>
+          <button type="button" class="hero-btn border" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="section cont-pec">
@@ -128,12 +130,20 @@
           <ul class="about-list list">
             <li class="about-link">
               <img src="images/box1.jpg" alt="work1" width="370" />
+
+              <p class="are-doing-text">Десктопные приложения</p>
             </li>
+
             <li class="about-link">
               <img src="images/box2.jpg" alt="work2" width="370" />
+
+              <p class="are-doing-text">Мобильные приложения</p>
             </li>
+
             <li class="about-link">
               <img src="images/box3.jpg" alt="work3" width="370" />
+
+              <p class="are-doing-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -442,5 +452,20 @@
         </div>
       </div>
     </footer>
+
+    <!--Backdrop-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p></p>
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="30" height="30">
+            <use href="./images/sptite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
