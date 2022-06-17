@@ -565,6 +565,7 @@ address {
 }
 
 .subs-footer {
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -575,7 +576,6 @@ address {
 
 .sign-up-form {
     display: flex;
-    margin-top: 20px;
 }
 
 .footer-input-mail {
@@ -636,7 +636,6 @@ address {
 .footer-modal {
     margin-left: auto;
     width: 570px;
-    height: 86px;
 }
 
 
@@ -701,14 +700,14 @@ address {
 
 .modal-icon {
     position: absolute;
-    top: 0px;
-    right: 0px;
 
     display: inline-block;
-
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
     fill: currentColor;
+
+    top: 6px;
+    right: 6px;
 }
 
 .modal-icon:hover {
