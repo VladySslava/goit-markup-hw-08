@@ -1,0 +1,114 @@
+.header-nav .header-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-connect .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header-nav {
+    display: block;
+
+}
+
+.header-nav__list .link.current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.header-nav__list .current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+}
+
+.logo {
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+}
+
+.logo-accent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+}
+
+.header-nav__link {
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--second-title-color);
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus {
+    color: var(--accent-color);
+}
+
+.header-nav__list,
+.header-connect__list {
+    display: flex;
+}
+
+.header-connect__list .link {
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-connect__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-connect {
+    margin-left: auto;
+}
+
+.header-connect__tell {
+    margin-left: 50px;
+}
+
+.header-connect__mail,
+.header-connect__tell {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.header-connect__mail:hover,
+.header-connect__tell:hover,
+.header-connect__mail:focus,
+.header-connect__tell:focus {
+    color: var(--accent-color);
+}

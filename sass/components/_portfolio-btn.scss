@@ -1,0 +1,21 @@
+.port__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--second-title-color);
+    background-color: var(--third-background-color);
+    padding: 6px 22px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.port__btn:hover,
+.port__btn:focus {
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+}
+

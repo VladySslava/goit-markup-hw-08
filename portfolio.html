@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -24,33 +24,36 @@
           >Web<span class="logo-accent link">Studio</span></a
         >
         <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link link">Студия</a>
+          <ul class="header-nav__list list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link link">Студия</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link current"
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link link current"
                 >Портфолио</a
               >
             </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Контакты</a>
+            <li class="header-nav__item">
+              <a href="" class="header-nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="header-connect">
-          <ul class="header-site-nav list">
+          <ul class="header-connect__list list">
             <li>
-              <a href="mailto:info@devstudio.com" class="header-mail link">
-                <svg class="auth-nav-icon" width="16" height="12">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-connect__mail link"
+              >
+                <svg class="header-connect__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-mail_header"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a href="tell:+380961111111" class="header-tell link">
-                <svg class="auth-nav-icon" width="10" height="16">
+              <a href="tell:+380961111111" class="header-connect__tell link">
+                <svg class="header-connect__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-tell_header"></use>
                 </svg>
                 +38 096 111 11 11
@@ -61,34 +64,34 @@
       </div>
     </header>
 
-    <main class="port-all">
-      <section class="section port-section">
-        <div class="container container-port">
-          <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="port-section-list list">
-            <li><button class="port-btn border" type="button">Все</button></li>
+    <main class="port">
+      <section class="section port__section">
+        <div class="container">
+          <h1 class="port__title">Portfolio</h1>
+          <ul class="port__list list">
+            <li><button class="port__btn border" type="button">Все</button></li>
             <li>
-              <button class="port-btn border" type="button">Веб-сайты</button>
+              <button class="port__btn border" type="button">Веб-сайты</button>
             </li>
             <li>
-              <button class="port-btn border" type="button">Приложения</button>
+              <button class="port__btn border" type="button">Приложения</button>
             </li>
             <li>
-              <button class="port-btn border" type="button">Дизайн</button>
+              <button class="port__btn border" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="port-btn border" type="button">Маркетинг</button>
+              <button class="port__btn border" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="port-img-list list">
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+          <ul class="port__img-list list">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port1.jpg" alt="laptop" width="370" />
 
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -98,19 +101,19 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Технокряк</h2>
-                  <p class="port-text">Веб-сайт</p>
+                  <h2 class="description__title">Технокряк</h2>
+                  <p class="description__text">Веб-сайт</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port2.jpg" alt="sport" width="370" />
 
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -120,18 +123,20 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="port-text">Дизайн</p>
+                  <h2 class="description__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="description__text">Дизайн</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port3.jpg" alt="restaurant" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -141,18 +146,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Ресторан Seafood</h2>
-                  <p class="port-text">Приложение</p>
+                  <h2 class="description__title">Ресторан Seafood</h2>
+                  <p class="description__text">Приложение</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port4.jpg" alt="headphones" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -162,18 +167,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Проект Prime</h2>
-                  <p class="port-text">Маркетинг</p>
+                  <h2 class="description__title">Проект Prime</h2>
+                  <p class="description__text">Маркетинг</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port5.jpg" alt="box" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -183,18 +188,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Проект Boxes</h2>
-                  <p class="port-text">Приложение</p>
+                  <h2 class="description__title">Проект Boxes</h2>
+                  <p class="description__text">Приложение</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port6.jpg" alt="computer" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -204,18 +209,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Inspiration has no Borders</h2>
-                  <p class="port-text">Веб-сайт</p>
+                  <h2 class="description__title">Inspiration has no Borders</h2>
+                  <p class="description__text">Веб-сайт</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port7.jpg" alt="book" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -225,18 +230,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Издание Limited Edition</h2>
-                  <p class="port-text">Дизайн</p>
+                  <h2 class="description__title">Издание Limited Edition</h2>
+                  <p class="description__text">Дизайн</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port8.jpg" alt="tag" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -246,18 +251,18 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Проект LAB</h2>
-                  <p class="port-text">Маркетинг</p>
+                  <h2 class="description__title">Проект LAB</h2>
+                  <p class="description__text">Маркетинг</p>
                 </div></a
               >
             </li>
 
-            <li class="port-img">
-              <a class="project-link link" href="">
-                <div class="project-thumb">
+            <li class="port__item">
+              <a class="port__link link" href="">
+                <div class="port__thumb">
                   <img src="./images/port9.jpg" alt="work" width="370" />
-                  <div class="project-overlay">
-                    <p class="project-content">
+                  <div class="project">
+                    <p class="project__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -267,8 +272,8 @@
                 </div>
 
                 <div class="description">
-                  <h2 class="port-title">Growing Business</h2>
-                  <p class="port-text">Приложение</p>
+                  <h2 class="description__title">Growing Business</h2>
+                  <p class="description__text">Приложение</p>
                 </div></a
               >
             </li>
@@ -285,10 +290,10 @@
               >Web<span class="footer-logo link">Studio</span></a
             >
             <address>
-              <ul class="footer-list list">
-                <li class="footer-item">
+              <ul class="footer__list list">
+                <li class="footer__item">
                   <a
-                    class="footer-address link"
+                    class="footer__address link"
                     href="https://goo.gl/maps/zkPrUZPVj4T2EZEg6"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -296,12 +301,12 @@
                     г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="footer-item">
+                <li class="footer__item">
                   <a href="mailto:info@example.com" class="footer-contact link"
                     >info@example.com</a
                   >
                 </li>
-                <li class="footer-item">
+                <li class="footer__item">
                   <a href="tell:+380961111111" class="footer-contact link"
                     >+38 096 111 11 11</a
                   >
@@ -310,33 +315,33 @@
             </address>
           </div>
 
-          <div class="do-flex">
-            <p class="do-title">Присоединяйтесь</p>
-            <ul class="do-list list">
-              <li class="do-item">
-                <a class="do-link" href="">
-                  <svg class="do-icon" width="20" height="20">
+          <div class="do">
+            <p class="do__title">Присоединяйтесь</p>
+            <ul class="do__list list">
+              <li class="do__item">
+                <a class="do__link" href="">
+                  <svg class="do__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram_team"></use>
                   </svg>
                 </a>
               </li>
-              <li class="do-item">
-                <a class="do-link" href="">
-                  <svg class="do-icon" width="20" height="20">
+              <li class="do__item">
+                <a class="do__link" href="">
+                  <svg class="do__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter_team"></use>
                   </svg>
                 </a>
               </li>
-              <li class="do-item">
-                <a class="do-link" href="">
-                  <svg class="do-icon" width="20" height="20">
+              <li class="do__item">
+                <a class="do__link" href="">
+                  <svg class="do__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook_team"></use>
                   </svg>
                 </a>
               </li>
-              <li class="do-item">
-                <a class="do-link" href="">
-                  <svg class="do-icon" width="20" height="20">
+              <li class="do__item">
+                <a class="do__link" href="">
+                  <svg class="do__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin_team"></use>
                   </svg>
                 </a>
@@ -345,18 +350,18 @@
           </div>
 
           <div class="footer-modal">
-            <p class="subs-footer">Подпишитесь на рассылку</p>
-            <form action="" class="sign-up-form">
+            <p class="footer-modal__title">Подпишитесь на рассылку</p>
+            <form class="footer-modal__sign-up">
               <input
-                type="mail"
+                type="email"
                 id="footer-mail"
                 name="footer-mail"
-                class="footer-input-mail"
+                class="footer-modal__mail"
                 placeholder="E-mail"
               />
-              <button type="submit" class="submit-footer-btn button">
+              <button type="submit" class="footer-modal__btn button">
                 Подписаться
-                <span class="footer-sign"></span>
+                <span class="footer-modal__sign"></span>
               </button>
             </form>
           </div>
