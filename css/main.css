@@ -182,30 +182,6 @@
   background-color: var(--hero-button-hover);
 }
 
-.feature__svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--third-background-color);
-}
-
-.feature__title {
-  font-weight: 700;
-  line-height: 1.1428571429;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: var(--second-title-color);
-  margin-bottom: 10px;
-}
-
-.feature__text {
-  line-height: 1.7;
-  color: var(--text-color);
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -361,20 +337,43 @@
   color: var(--primary-white-color);
 }
 
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.feature__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--third-background-color);
+}
+
+.feature__title {
+  font-weight: 700;
+  line-height: 1.1428571429;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--second-title-color);
+  margin-bottom: 10px;
+}
+
+.feature__text {
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
 .feature__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.feature__list .feature__item {
-  width: 270px;
-}
-
-.feature__list .feature__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.feature__item:not(:last-child) {
-  margin-right: 30px;
+.feature__item {
+  width: 100%;
 }
 
 .klients__list {
@@ -926,6 +925,13 @@ address {
   color: var(--main-title-color);
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 :root {
   --main-title-color: #FFFFFF;
   --secondary-whit-color: rgba(255, 255, 255, 0.6);
@@ -963,14 +969,6 @@ address {
   text-align: center;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -987,12 +985,6 @@ body {
   background-color: var(--main-title-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 p,
@@ -1022,4 +1014,11 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
