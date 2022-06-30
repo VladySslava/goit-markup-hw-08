@@ -26,10 +26,6 @@ html {
     box-sizing: inherit;
 }
 
-&::before {
-    flex-shrink: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--second-background-color);

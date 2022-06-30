@@ -81,15 +81,36 @@
 
 .section-about {
     padding-top: 0;
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    // }
+}
+
+.section-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: center;
+
 }
 
 .section-team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-.section-team__list {
-    display: flex;
+    width: 100%;
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+
+    
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
 }
 
 .section-team__list .section-team__item {
@@ -100,12 +121,6 @@
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
     text-align: center;
-}
-
-.section-team__item>img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .team-list {
@@ -167,8 +182,8 @@
 
 .section-team {
     background-color: var(--third-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .team-list__title {
@@ -237,6 +252,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--third-background-color);
@@ -246,11 +262,14 @@
     font-weight: 700;
     line-height: calc(16 / 14);
     text-transform: uppercase;
-    text-align: center;
     font-size: 14px;
     color: var(--second-title-color);
 
     margin-bottom: 10px;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
 }
 
 .feature__text {
@@ -259,7 +278,6 @@
 }
 
 .feature__list {
-    // margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -267,6 +285,15 @@
 
 .feature__item {
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 // .feature__list .feature__item {
